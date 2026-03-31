@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #02000f; /* Deep dark blue for high contrast */
+  --foreground: #f0f0f0;
+  --neon-cyan: #00f0ff;
+  --neon-magenta: #ff00ff;
+  --neon-green: #39ff14;
+  --neon-purple: #9d00ff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .glow-text-cyan {
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  }
+  .glow-text-magenta {
+    text-shadow: 0 0 5px var(--neon-magenta), 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta);
+  }
+  .glow-text-green {
+    text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+  }
+  .glow-box-cyan {
+    box-shadow: 0 0 10px var(--neon-cyan), inset 0 0 5px var(--neon-cyan);
+  }
+  .glow-box-magenta {
+    box-shadow: 0 0 10px var(--neon-magenta), inset 0 0 5px var(--neon-magenta);
+  }
+  .glass-panel {
+    background: rgba(10, 10, 30, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 12px;
+  }
+}

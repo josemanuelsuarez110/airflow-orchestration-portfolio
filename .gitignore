@@ -1,0 +1,11 @@
+logs/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+postgres-db-volume/
+.env
+__pycache__/
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
